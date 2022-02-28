@@ -1,6 +1,7 @@
 import * as alt from 'alt-client';
 import './events';
 import './minimap';
+import './streamer';
 
 alt.onServer('log:Console', handleLogConsole);
 
