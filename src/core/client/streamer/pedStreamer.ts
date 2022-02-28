@@ -15,14 +15,14 @@ export class PedStreamer implements IPed {
 
     public gameHandle: number | null;
 
-    constructor(pedData: IPed) {
-        this.id = pedData.id;
-        this.model = pedData.model;
-        this.position = pedData.position;
-        this.heading = pedData.heading;
-        this.dimension = pedData.dimension;
-        this.streamDistance = pedData.streamDistance;
-        this.pedData = pedData.pedData;
+    constructor(ped: IPed) {
+        this.id = ped.id;
+        this.model = ped.model;
+        this.position = ped.position;
+        this.heading = ped.heading;
+        this.dimension = ped.dimension;
+        this.streamDistance = ped.streamDistance;
+        this.pedData = ped.pedData;
         this.gameHandle = null;
 
         PedStreamer.pedList.push(this);
