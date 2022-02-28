@@ -9,3 +9,5 @@ A simple Devserver that handels stuff
 -   Vehicles: Spawn, Tuning, Painting
 -   Clothes: set Clothes
 -   Props: set Props
+-   Ped Streamer
+-   Object Streamer

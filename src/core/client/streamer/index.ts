@@ -1,3 +1,4 @@
+import './objectStreamer';
 import './pedStreamer';
 import alt from 'alt-client';
 import game from 'natives';
