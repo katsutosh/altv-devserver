@@ -37,22 +37,17 @@ export class ObjectService implements IObject {
         alt.emitAllClientsRaw(ObjectEvent.Create, this);
     }
 
-    static update(id: number, updateObject: any) {
-        if (Object.keys(updateObject).length) {
-            const object = ObjectService.getById(id);
-
-            if (!object) {
-                return;
-            }
-
-            for(const prop of Object.keys(updateObject)) {
-                object[prop] = updateObject[prop];
-            }
-
-            alt.emitAllClients(ObjectEvent.Sync, ObjectService.objectList);
+    static updateModel(id: number, newModel: string) {
+        const object = ObjectService.getById(id);
+        if (!object) {
+            return;
         }
+        
+        object.model = newModel;
+        
+        alt.emitAllClients(ObjectEvent.Sync, ObjectService.objectList);
     }
-
+    
     static delete(id: number) {
         const objectIndex = ObjectService.getIndexById(id);
 
