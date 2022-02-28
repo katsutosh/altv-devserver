@@ -71,10 +71,13 @@ export class PedStreamer implements IPed {
         const hash = alt.hash(ped.model);
         await loadModel(ped.model);
 
-        const createdPed = game.createPed(1, hash, ped.position.x, ped.position.y, ped.position.z - 0.5, ped.heading, false, false);
-        game.setEntityHeading(createdPed, ped.heading);
-        game.freezeEntityPosition(createdPed, true);
+        if (typeof ped.heading === 'string') {
+            ped.heading = parseFloat(ped.heading);
+        }
 
+        const createdPed = game.createPed(1, hash, ped.position.x, ped.position.y, ped.position.z - 0.5, ped.heading, false, false);
+
+        game.freezeEntityPosition(createdPed, true);
         game.taskSetBlockingOfNonTemporaryEvents(ped.heading, true);
         game.setBlockingOfNonTemporaryEvents(ped.heading, true);
         game.setPedFleeAttributes(ped.heading, 0, false);

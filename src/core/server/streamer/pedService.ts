@@ -12,7 +12,10 @@ export class PedService implements IPed {
     public streamDistance: number;
     public pedData: IPedData;
 
-    constructor(_model: string, _position: alt.Vector3, _heading: number, _dimension: number = 0, _streamDistance: number = 50, _pedData: IPedData = null) {
+    constructor(_model: string, _position: alt.Vector3, _heading: number = 0, _dimension: number = 0, _streamDistance: number = 50, _pedData: IPedData = null) {
+        if (typeof _heading === 'string') {
+            _heading = parseFloat(_heading);
+        }
         PedService._id++;
         this.id = PedService._id;
         this.model = _model;
