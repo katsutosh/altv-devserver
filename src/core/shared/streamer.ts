@@ -13,7 +13,7 @@ export declare interface IPed {
 export declare interface IPedData {
 }
 
-export declare const enum PedEvent {
+export enum PedEvent {
     Create = 'Ped:Create',
     Delete = 'Ped:Delete',
     Sync = 'Ped:Sync'
@@ -35,7 +35,7 @@ export declare interface IObjectData {
     
 }
 
-export declare const enum ObjectEvent {
+export enum ObjectEvent {
     Create = 'Object:Create',
     Delete = 'Object:Delete',
     Sync = 'Object:Sync'
