@@ -42,12 +42,12 @@ export class ObjectService implements IObject {
         if (!object) {
             return;
         }
-        
+
         object.model = newModel;
-        
+
         alt.emitAllClients(ObjectEvent.Sync, ObjectService.objectList);
     }
-    
+
     static delete(id: number) {
         const objectIndex = ObjectService.getIndexById(id);
 

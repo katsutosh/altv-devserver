@@ -6,7 +6,8 @@ chat.registerCmd('v', spawnVehicle);
 chat.registerCmd('veh', spawnVehicle);
 
 chat.registerCmd('rc', (player, args) => {
-    alt.Vehicle.all.forEach(vehicle => {
+    const allVehicles = alt.Vehicle.all;
+    allVehicles.forEach(vehicle => {
         vehicle.destroy();
     });
     chat.response(player, `Du hast alle Fahrzeuge zerstört.`);

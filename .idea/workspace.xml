@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7230be7-8644-4db6-b119-506288079850" name="Changes" comment="add ct">
+    <list default="true" id="d7230be7-8644-4db6-b119-506288079850" name="Changes" comment="fix">
+      <change afterPath="$PROJECT_DIR$/src/core/server/_helper/player.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/core/server/saves/data.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/server.cfg" beforeDir="false" afterPath="$PROJECT_DIR$/server.cfg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/shared/streamer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/shared/streamer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/devserver/server.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/server/chat/commands/object.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/server/chat/commands/object.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/server/chat/commands/vehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/server/chat/commands/vehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/server/streamer/objectService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/server/streamer/objectService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +62,7 @@
       <updated>1645858772099</updated>
       <workItem from="1645858773601" duration="8000" />
       <workItem from="1645858830794" duration="554000" />
-      <workItem from="1646015539508" duration="17258000" />
+      <workItem from="1646015539508" duration="20277000" />
     </task>
     <task id="LOCAL-00001" summary="add pedStreamer">
       <created>1646026597008</created>
@@ -109,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646315888196</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fix">
+      <created>1646316274835</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646316274835</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +149,7 @@
     <MESSAGE value="add objectStreamer" />
     <MESSAGE value="stuff" />
     <MESSAGE value="add ct" />
-    <option name="LAST_COMMIT_MESSAGE" value="add ct" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
