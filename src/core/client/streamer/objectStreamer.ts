@@ -78,7 +78,7 @@ export class ObjectStreamer implements IObject {
         if (typeof object.heading === 'string') {
             object.heading = parseFloat(object.heading);
         }
-        
+
         const createdObject = game.createObjectNoOffset(hash, object.position.x, object.position.y, object.position.z, false, false, false);
         game.setEntityHeading(createdObject, object.heading);
         game.freezeEntityPosition(createdObject, true);
