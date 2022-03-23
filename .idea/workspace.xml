@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7230be7-8644-4db6-b119-506288079850" name="Changes" comment="add createobject command">
+    <list default="true" id="d7230be7-8644-4db6-b119-506288079850" name="Changes" comment="fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/client/streamer/objectStreamer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/client/streamer/objectStreamer.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,7 +37,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
-    <property name="ts.external.directory.path" value="C:\Users\andre\Desktop\Projekte\elementV\devserver\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -59,6 +58,7 @@
       <workItem from="1645858830794" duration="554000" />
       <workItem from="1646015539508" duration="20944000" />
       <workItem from="1646556854819" duration="1305000" />
+      <workItem from="1648056642041" duration="209000" />
     </task>
     <task id="LOCAL-00001" summary="add pedStreamer">
       <created>1646026597008</created>
@@ -123,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646503102819</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fix">
+      <created>1648056741958</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1648056741958</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,8 +159,8 @@
     <MESSAGE value="add objectStreamer" />
     <MESSAGE value="stuff" />
     <MESSAGE value="add ct" />
-    <MESSAGE value="fix" />
     <MESSAGE value="add createobject command" />
-    <option name="LAST_COMMIT_MESSAGE" value="add createobject command" />
+    <MESSAGE value="fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix" />
   </component>
 </project>
