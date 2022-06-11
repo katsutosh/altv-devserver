@@ -1,4 +1,4 @@
-import * as alt from 'alt-client';
+import * as alt from 'alt';
 import game from 'natives';
 import BadgeStyle from "./enums/BadgeStyle";
 import Font from "./enums/Font";
@@ -29,6 +29,7 @@ import Scaleform from './utils/Scaleform';
 import BigMessage from './modules/BigMessage';
 import MidsizedMessage from './modules/MidsizedMessage';
 import UIMenuDynamicListItem from './items/UIMenuDynamicListItem';
+import Funcs from '../Funcs';
 
 let menuPool: NativeUI[] = [];
 

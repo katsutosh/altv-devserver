@@ -1,9 +1,9 @@
-﻿import * as alt from 'alt-client';
+﻿import * as alt from 'alt';
 import * as game from 'natives';
 
 export default class Scaleform {
     private _handle: number = 0;
-    private readonly scaleForm: string;
+    private scaleForm: string;
 
     public constructor(scaleForm: string) {
         this.scaleForm = scaleForm;

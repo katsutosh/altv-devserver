@@ -102,7 +102,7 @@ export class ObjectStreamer implements IObject {
     static async checkObjects() {
         if (alt.Player.local && alt.Player.local.pos) {
 
-            let myDimension: number = 0;
+            let myDimension: unknown = 0;
             if (alt.Player.local.hasMeta('dimension')) {
                 myDimension = alt.Player.local.getMeta('dimension');
             }

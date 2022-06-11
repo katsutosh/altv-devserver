@@ -1,8 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d7230be7-8644-4db6-b119-506288079850" name="Changes" comment="fix">
+    <list default="true" id="d7230be7-8644-4db6-b119-506288079850" name="Changes" comment="add">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/client/streamer/objectStreamer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/client/streamer/objectStreamer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/server/chat/commands/player.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/server/chat/commands/player.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/server/startup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/server/startup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/_keep.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/client.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/client.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/NativeUi.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/NativeUi.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/Alignment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/Alignment.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/BadgeStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/BadgeStyle.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/ChangeDirection.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/ChangeDirection.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/Control.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/Control.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/Font.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/Font.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/HudColor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/enums/HudColor.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuAutoListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuAutoListItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuCheckboxItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuCheckboxItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuDynamicListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuDynamicListItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuListItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuListItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuSliderItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/items/UIMenuSliderItem.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Color.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Color.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Common.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/LiteEvent.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/LiteEvent.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Point.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Point.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Scaleform.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Scaleform.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Screen.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Screen.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Size.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/Size.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/UUIDV4.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/includes/NativeUI/utils/UUIDV4.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/menus/chardata.mjs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ct/resource.cfg" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +74,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -37,7 +97,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
-    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.3.2\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="ts.external.directory.path" value="C:\Users\andre\Desktop\Projekte\elementV\devserver\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -58,7 +118,8 @@
       <workItem from="1645858830794" duration="554000" />
       <workItem from="1646015539508" duration="20944000" />
       <workItem from="1646556854819" duration="1305000" />
-      <workItem from="1648056642041" duration="209000" />
+      <workItem from="1648056642041" duration="1481000" />
+      <workItem from="1654947111448" duration="2655000" />
     </task>
     <task id="LOCAL-00001" summary="add pedStreamer">
       <created>1646026597008</created>
@@ -130,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648056741958</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add">
+      <created>1648056925586</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1648056925586</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,7 +206,6 @@
     <option name="exactExcludedFiles">
       <list>
         <option value="$PROJECT_DIR$/src/ct/includes/NativeUI/NativeUi.js" />
-        <option value="$PROJECT_DIR$/src/ct/client.js" />
       </list>
     </option>
   </component>
@@ -161,6 +228,7 @@
     <MESSAGE value="add ct" />
     <MESSAGE value="add createobject command" />
     <MESSAGE value="fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix" />
+    <MESSAGE value="add" />
+    <option name="LAST_COMMIT_MESSAGE" value="add" />
   </component>
 </project>

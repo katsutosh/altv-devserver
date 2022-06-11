@@ -5,7 +5,7 @@ import path from 'path';
 let welcomeText = 'DevServer - katsutosh';
 alt.log(welcomeText);
 
-const resourceDir = alt.getResourcePath('core');
+const resourceDir = alt.Resource.current.path;
 LoadFiles();
 
 function LoadFiles() {

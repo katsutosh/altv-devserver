@@ -15,3 +15,10 @@ chat.registerCmd('sethp', (player, args) => {
     player.health = (parseInt(args[0]) + 100);
     chat.response(player, `Du hast deine HP auf ${args[0]} gesetzt.`);
 });
+
+chat.registerCmd('male', (player, args) => {
+    player.model = 'mp_m_freemode_01';
+});
+chat.registerCmd('female', (player, args) => {
+    player.model = 'mp_f_freemode_01';
+});
