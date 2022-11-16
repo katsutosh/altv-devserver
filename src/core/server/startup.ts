@@ -71,7 +71,7 @@ function LoadFiles() {
 alt.on('playerConnect', handlePlayerConnect);
 
 function handlePlayerConnect(player: alt.Player) {
-    alt.log(`[${player.id}] ${player.name} has connected to the server.ss`);
+    alt.log(`[${player.id}] ${player.name} has connected to the server.`);
 
     player.model = 'mp_m_freemode_01';
     player.spawn(0, 0, 75, 0);
