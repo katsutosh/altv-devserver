@@ -4,7 +4,7 @@
   "description": "Devserver",
   "main": "",
   "scripts": {
-    "clean": "",
+    "clean": "rimraf ./resources",
     "build": "npm run clean && swc ./src -d ./resources --copy-files",
     "update": "altv-pkg d dev",
     "windows": "npm run build && altv-server.exe",
