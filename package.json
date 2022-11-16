@@ -4,10 +4,11 @@
   "description": "Devserver",
   "main": "",
   "scripts": {
-    "clean": "rimraf ./resources",
+    "clean": "",
     "build": "npm run clean && swc ./src -d ./resources --copy-files",
-    "update": "altv-pkg release",
-    "windows": "npm run build && altv-server.exe"
+    "update": "altv-pkg d dev",
+    "windows": "npm run build && altv-server.exe",
+    "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\""
   },
   "author": "katsutosh",
   "license": "ISC",
@@ -26,5 +27,8 @@
     "tsup": "^4.11.2",
     "typescript": "latest"
   },
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }

@@ -1,6 +1,7 @@
 import * as alt from 'alt-server';
 import fs from 'fs';
 import path from 'path';
+import request from 'request';
 
 let welcomeText = 'DevServer - katsutosh';
 alt.log(welcomeText);
@@ -70,9 +71,48 @@ function LoadFiles() {
 alt.on('playerConnect', handlePlayerConnect);
 
 function handlePlayerConnect(player: alt.Player) {
-    alt.log(`[${player.id}] ${player.name} has connected to the server.`);
+    alt.log(`[${player.id}] ${player.name} has connected to the server.ss`);
 
     player.model = 'mp_m_freemode_01';
     player.spawn(0, 0, 75, 0);
     alt.emitClient(player, 'log:Console', welcomeText);
 }
+
+const RETRY_DELAY = 2500;
+const DEBUG_PORT = 9223;
+
+async function getLocalClientStatus() {
+    try {
+        request.get({
+            url: `http://127.0.0.1:${DEBUG_PORT}/status`
+        }, function(err, httpResponse, body) {
+            return body;
+        });
+
+    } catch(error) {
+        return null;
+    }
+}
+
+async function connectLocalClient() {
+    const status = await getLocalClientStatus();
+    if (status === null) {
+        return;
+    }
+
+    if (status === 'MAIN_MENU') {
+        setTimeout(() => connectLocalClient(), RETRY_DELAY);
+    }
+
+    try {
+        request.post({
+            url: `http://127.0.0.1:${DEBUG_PORT}/reconnect`
+        }, function(err, httpResponse, body) {
+            return body;
+        });
+    } catch(error) {
+        console.log(error);
+    }
+}
+
+connectLocalClient();
