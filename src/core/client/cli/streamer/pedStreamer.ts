@@ -1,6 +1,6 @@
 import * as alt from 'alt-client';
 import * as game from 'natives';
-import {IPed, IPedData, PedEvent} from '../../shared/streamer';
+import {IPed, IPedData, PedEvent} from '../../../shared/streamer';
 import {loadModel} from './index';
 
 export class PedStreamer implements IPed {
@@ -101,7 +101,7 @@ export class PedStreamer implements IPed {
         if (alt.Player.local && alt.Player.local.pos) {
             let myDimension: number = 0;
             if (alt.Player.local.hasMeta('dimension')) {
-                myDimension = alt.Player.local.getMeta('dimension');
+                myDimension = alt.Player.local.getMeta<number>('dimension');
             }
 
             for(const ped of PedStreamer.pedList) {

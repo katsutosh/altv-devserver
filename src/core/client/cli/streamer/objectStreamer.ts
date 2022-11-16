@@ -1,6 +1,6 @@
 import * as alt from 'alt-client';
 import * as game from 'natives';
-import {IObject, IObjectData, ObjectEvent} from '../../shared/streamer';
+import {IObject, IObjectData, ObjectEvent} from '../../../shared/streamer';
 import {loadModel} from './index';
 
 export class ObjectStreamer implements IObject {

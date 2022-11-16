@@ -14,7 +14,10 @@ console.log(between(0, 5));
 alt.on('playerConnect', handlePlayerConnect);
 
 function handlePlayerConnect(player: alt.Player) {
-    alt.log(`[${player.id}] ${player.name} has connected to the server.`);
+    alt.log(`log - [${player.id}] ${player.name} has connected to the server.`);
+    alt.logWarning(`warning - [${player.id}] ${player.name} has connected to the server.`);
+    alt.logError(`error - [${player.id}] ${player.name} has connected to the server.`);
+    console.log(`console - [${player.id}] ${player.name} has connected to the server.`);
 
     player.model = 'mp_m_freemode_01';
     player.spawn(0, 0, 75, 0);

@@ -2,7 +2,7 @@ import * as alt from 'alt-client';
 import './events';
 import './minimap';
 import './streamer';
-import {between} from '../shared/helper';
+import {between} from '../../shared/helper';
 
 alt.onServer('log:Console', handleLogConsole);
 

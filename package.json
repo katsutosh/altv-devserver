@@ -4,8 +4,8 @@
   "description": "Devserver",
   "main": "",
   "scripts": {
-    "clean": "rimraf ./resources",
-    "build": "npm run clean && swc ./src -d ./resources --copy-files",
+    "clean": "",
+    "build": "npm run clean && swc ./src/core/server ./src/core/client/cli ./src/core/shared -d ./resources --copy-files",
     "update": "altv-pkg d dev",
     "windows": "npm run build && altv-server.exe",
     "windev": "nodemon --watch \"./src/**\" --ext \"ts\" --exec \"npm run build && altv-server.exe\""
